@@ -4,6 +4,10 @@
 #| |___ | || |  | | |_) | |_| | | . \| |___  | |  ___) |
 #|_____|___|_|  |_|____/ \___/  |_|\_\_____| |_| |____/ 
 
+
+# This function is made by reddit user ak47uk 
+#User Link: https://www.reddit.com/user/ak47uk/
+
 Write-Host " _     ___ __  __ ____   ___    _  _________   ______  " 
 Write-Host "| |   |_ _|  \/  | __ ) / _ \  | |/ / ____\ \ / / ___| "
 Write-Host "| |    | || |\/| |  _ \| | | | | ' /|  _|  \ V /\___ \ "
@@ -11,9 +15,6 @@ Write-Host "| |___ | || |  | | |_) | |_| | | . \| |___  | |  ___) |"
 Write-Host "|_____|___|_|  |_|____/ \___/  |_|\_\_____| |_| |____/ "
 
 $User = Read-Host "Your Username"
-
-# This function is made by reddit user ak47uk 
-#User Link: https://www.reddit.com/user/ak47uk/
 
 try {
     winget --version
@@ -41,7 +42,9 @@ winget install -e --id Python.Python.3.11
 python -m pip install --upgrade pip
 pip install pymsgbox
 pip install --upgrade setuptools wheel
-pip install distutils
+pip install pygame
+pip install pywin32
+pip install PyMsgBox
 
 irm "github.com//quasar098/limbos32/archive/refs/heads/master.zip"
 
