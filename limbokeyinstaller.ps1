@@ -46,13 +46,19 @@ pip install pygame
 pip install pywin32
 pip install PyMsgBox
 
-irm "github.com//quasar098/limbos32/archive/refs/heads/master.zip"
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
 
-Expand-Archive C\Users\$User\downloads\limbos32-master.zip
+Invoke-WebRequest "github.com//quasar098/limbos32/archive/refs/heads/master.zip" -OutFile Users\$User\downloads\limbos32-master.zip
+cd Users\$User\downloads\
+Expand-Archive -Path "limbos32-master.zip"  -DestinationPath C
+cd C\limbos32-master
 
 #limbo keys byquasar098 
 #Project Link: https://github.com/quasar098/limbos32.git
-
-cd limbos32-master
 
 py main.py
